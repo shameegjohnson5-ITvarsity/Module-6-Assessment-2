@@ -1,0 +1,759 @@
+
+/*==================================================================Universal Styles==================================================================================*/
+body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    font-family:sans-serif;
+    overflow-x: hidden;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+/*==================================================================Header==================================================================================*/
+
+#header{
+    background-color: #333333;
+    height:60px;  
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px 50px 0;
+    box-shadow: inset 2px 2px 4px 1px black;
+
+    
+} 
+
+#header h1{
+    position: relative;
+    padding-top: 10px;
+    margin: 0;
+    
+}
+
+
+#suv{
+    position: absolute;
+    top:29px;
+    left:-70px;
+    animation: car-move 5s linear 1;
+    -webkit-animation: car-move 5s linear 1;
+    width:50px;
+    height:25px;
+
+}
+
+.one{
+    position: absolute;
+    width:2000px;
+    height:30px;
+    animation: line-move 10s linear 1;
+    -webkit-animation: line-move 10s linear 1;
+    top:22px;
+    left:-2000px;
+    background-color: crimson;
+}
+
+
+/*==================================================================Menu==================================================================================*/
+
+#menu{
+    background-color: dodgerblue;
+    height:50px;
+}
+
+#menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#menu li{
+    display: inline-block;
+}
+
+#menu a{
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 40px;
+    line-height:50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 400;
+    font-size: 20px;
+/*    text-shadow: 1px 1px 1px black;*/
+    
+}
+
+#menu a:hover{
+    background-color: crimson;
+/*    box-shadow: inset 0 0 20px maroon;*/
+}
+
+
+
+/*==================================================================Page==================================================================================*/
+
+#page{
+    
+    background-color: #F4F3F2;
+    min-height: 500px;
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#content h2{
+    color: #333333;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+/* Content*/
+
+#content{
+    grid-column-start: 1;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end:3;
+    background-color: #F4F3F2;
+    padding:40px 120px;
+}
+
+#content p{
+    background-color: #F4F3F2;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+/* Sidebar*/
+
+#sidebar{
+    
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    background-color: lightblue;
+    padding: 40px 0 0 10px;
+}
+
+#sidebar ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#sidebar li{
+    border-top: solid 1px dodgerblue;
+    padding:14px 0px;
+}
+
+#sidebar li:hover{
+    font-weight: 700;
+    display: block;
+}
+
+#sidebar a{
+    color:black
+}
+
+/* Image Container*/
+
+.container{
+    position: relative;
+    top:-25px;
+    margin-left:80px;
+    padding:40px;
+    text-align: center;
+    background-color: mintcream;
+/*    box-shadow: 0 0 11px black;*/
+/*    border-radius: 5px;*/
+    width:80%;
+    height: 470px;
+
+}
+
+.container h2{
+    font-size:35px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+
+.container p{
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    
+}
+
+#homeimg{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    background-color: #F4F3F2;
+    padding:40px;
+}
+
+#homeimg img{
+    margin-top:50px;
+    width:270px;
+    height:220px;
+    padding:0px;
+    margin:50px 5px 5px 5px;
+    box-shadow: 0 0 8px black;
+/*    border-radius: 15px;*/
+    -moz-transition: -moz-transform 0.3s ease-in;
+	-webkit-transition: -webkit-transform 0.3s ease-in;
+	-o-transition: -o-transform 0.3s ease-in;
+}
+
+
+#homeimg img:hover{
+    box-shadow: 0 0 5px dodgerblue;
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+ }
+
+
+
+/*=======================================================================Vehicles Page==============================================================================*/
+
+.cars{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end:8;
+    padding:50px 90px;
+    grid-column-gap: 1px;
+    Margin-top:50px;
+    Margin-bottom:50px;
+    
+}
+.cars1{
+    background-color: mintcream;
+    width:400px;
+/*    padding-top: 20px;*/
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+/*    border-radius: 10px;*/
+/*    box-shadow: 0px 0px 7px black;*/
+    margin-left: 25px;
+}
+
+.cars1:hover{
+    box-shadow: 0 0 8px cadetblue;
+}
+
+.cars1 img{
+/*    margin-left:25px;*/
+    height: 290px;
+    width:400px;
+/*    box-shadow: 0px 0px 4px black;*/
+/*    border-radius: 4px;*/
+}
+
+.cars1 ul{
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: 	#36454F;
+    padding:10px 40px 10px 40px;
+}
+
+.cars1 h1{
+    font-size: 30px;
+    line-height: 10px;
+    color: dodgerblue;
+/*    text-shadow: 1px 1px 1px black;*/
+}
+
+.button{
+    
+    position: relative;
+    top:35px;
+/*    left:100px;*/
+    border: 1px solid grey;
+/*    box-shadow: 1px 1px 3px black;*/
+    padding: 10px 143px;
+    color:white;;
+/*    border-radius: 6px;*/
+    background-color:dodgerblue;
+/*    box-shadow: inset 0 0 20px royalblue;*/
+    opacity: 90%;
+   
+}
+
+.button:hover{
+    background-color: crimson;
+/*    box-shadow: inset 0 0 20px maroon;*/
+}
+
+/*=======================================================================Vehicle Details==============================================================================*/
+.car-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-name{
+    margin-left:50px;
+    font-size: 40px;
+}
+
+.car-price{
+    margin-right:80px;
+    font-size: 40px;
+    color:dodgerblue;
+/*    text-shadow: 2px 2px 3px black;*/
+}
+
+.cars-details{
+    background-color: mintcream;
+    width:1000px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+/*    border-radius: 10px;*/
+/*    box-shadow: 0px 0px 7px black;*/
+    margin-left: 80px;
+}
+
+.cars-details ul{
+    list-style: none;
+    font-weight: 700;
+    color: #333333;
+    padding:0 30px 0 30px;
+}
+
+
+.cars-details img{
+/*    margin-left:25px;*/
+    height: 670px;
+    width:1000px;
+/*    box-shadow: 0px 0px 4px black;*/
+/*    border-radius: 4px;*/
+}
+
+.contact-seller{
+        background-color: whitesmoke;
+    width:500px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+/*    border-radius: 10px;*/
+/*    box-shadow: 0px 0px 7px black;*/
+    margin-left: 10px;
+
+}
+
+.detail-container{
+    display: flex;
+}
+
+.detail-container li{
+    border-top: 1px solid gray;
+    line-height: 35px;
+}
+.specs{
+/*    background-color: red;*/
+    width:420px;
+    
+}
+
+.handling{
+/*     background-color: blue;*/
+    width:380px;
+}
+
+.styling{
+/*     background-color: green;*/
+    width:410px;
+    
+}
+
+
+/*=======================================================================Contact==============================================================================*/
+
+#content1{
+    margin:0;
+    padding:0;
+    background-color: lightgray;
+}
+
+#contact-content{
+    margin-left:45px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    
+}
+
+form p{
+    line-height: 0.1px;
+    
+    font-weight:700;
+    
+}
+
+.form-name{
+    
+    width: 400px;
+/*    border-radius: 5px;*/
+    border-color: transparent;
+    text-align: center;
+    
+}
+
+.form-number{
+    width: 400px;
+/*    border-radius: 5px;*/
+    border-color: transparent;
+    text-align: center;
+}
+
+.form-email{
+    
+     width: 400px;
+    border-color: transparent;
+    text-align: center;
+}
+
+.form-text{
+     width: 400px;
+    text-align: center;
+    border-color: transparent;
+    
+}
+
+textarea{
+    resize: none;
+}
+
+#button{
+    position: relative;
+    left:130px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    color:white;
+    background-color:dodgerblue;
+}
+
+#button:hover{
+    background-color:crimson;
+}
+
+/*=======================================================================Side Bar 2==============================================================================*/
+
+.contact-seller{
+    background-color: lightgray;
+}
+
+#sidebar2{
+    
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    background-color: lightgray;
+    padding: 40px 0 0 10px;
+}
+
+#sidebar2 ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+#sidebar2 li{
+    border-top: solid 1px gray;
+    padding:14px 0px;
+}
+
+#sidebar2 li:hover{
+    font-weight: 700;
+    display: block;
+}
+
+#sidebar2 a{
+    color:black;
+}
+
+.dailydeals{
+    padding: 60px 20px 0 20px;
+}
+.dailydeals img{
+    width:200px;
+    padding: 0 10px 30px 0;
+}
+
+.deal1{
+    display: flex;
+}
+
+.deal-details{
+    letter-spacing:0.1em;
+    line-height: 1px;
+    margin: 25px 0 0 20px;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+i{
+    position: relative;
+    left:175px;
+    bottom:50px;
+    font-size: 28px;
+    color:dodgerblue;
+}
+
+i:hover{
+    transform: scale(1.2);
+    color:crimson;
+}
+
+
+/*=======================================================================Contact Page & About Page==============================================================================*/
+
+
+#page2{
+    min-height: 500px;
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+#page3 p{
+    text-align: center;
+    margin-top:100px;
+    margin-bottom:100px;
+    font-size: 60px;
+}
+#content2 h2{
+    
+    color: #333333;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* Content*/
+
+#content2 {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end:3;
+    background-color: white;
+    padding:40px 120px;
+    font-size: 25px;
+    background-color: skyblue;
+}
+
+#about-content{
+   text-align: center;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end:3;
+    background-color: white;
+    padding:40px 10px;
+    font-size: 20px;
+}
+
+#content2 p{
+    font-size: 18px;
+    
+}
+
+.contact1{
+    margin: 20px 200px 0 150px;
+
+}
+
+.contact1 p{
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    color:black;
+
+}
+
+.contact2{
+    margin-top:40px;
+}
+
+
+
+.form-name2{
+    
+    width: 500px;
+    height:35px;
+    border-color: transparent;
+    text-align: center;
+    
+}
+
+.form-number2{
+    width: 500px;
+    height:35px;
+    border-color: transparent;
+    text-align: center;
+    
+}
+
+.form-email2{
+    
+     width: 500px;
+    height:35px;
+    border-color:transparent;
+    text-align: center;
+}
+
+.form-text2{
+     width: 500px;
+    border-color:transparent;
+    text-align: center;
+    
+}
+
+textarea{
+    resize: none;
+}
+
+#button2{
+    margin-bottom: 100px;
+    padding: 10px 163px 10px 163px;
+    color:white;;
+    background-color:dodgerblue;
+
+    
+}
+
+#button2:hover{
+    background-color:crimson;
+
+}
+
+
+
+
+
+/*=======================================================================FOOTER==============================================================================*/
+
+
+
+#footer{
+    
+    width:100%;
+    height:340px;
+    background-color:#1e1b1a;
+    padding-top: 25px;
+    padding-left:100px;
+    padding-bottom:40px;
+    clear: both;
+    
+}
+
+#footer h2{
+    font-size:18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:white;
+}
+
+#footer p{
+    color: #adadad;
+}
+
+#footer a{
+    color: #adadad;
+}
+
+#box1{
+    float: left;
+    width:30%;
+    padding-right: 30px;
+    
+}
+
+#box2{
+    float: left;
+    width:30%;
+    padding-right: 30px;
+}
+
+#box3{
+    float: right;
+    width:30%;
+    padding-right: 30px;
+}
+
+ul.styled{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+ul.styled li{
+    border-top: solid 1px #e5e5e5;
+    padding:14px 0px;
+    
+}
+
+
+
+
+/*=======================================================================COPYRIGHT==============================================================================*/
+
+
+#copyright{
+    width: 100%;
+    height:80px;
+    text-align: center;
+    background-color: dodgerblue;
+    box-shadow: inset 0 0 20px royalblue;
+    padding-top: 55px;
+    clear: both;
+}
+
+#copyright p{
+    font-size:12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color:white;
+}
+
+
+
+
+
+/*==========================================================================Animation===============================================================================*/
+
+
+
+@keyframes car-move{
+    100%{
+        transform: translateX(2020px);
+        -webkit-transform: translate(2020px);
+    }
+}
+
+@keyframes line-move{
+    100%{
+        transform: translateX(4000px);
+        -webkit-transform: translate(4000px);
+    }
+}
